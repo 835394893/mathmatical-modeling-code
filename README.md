@@ -9,8 +9,7 @@
 ├── README.md
 ├── 问题一/
 │   ├── src/
-│   │   ├── problem1.py              # 推荐运行入口
-│   │   └── problem1_analysis.py     # 原始完整分析实现
+│   │   └── problem1.py              # 完整分析脚本，原生读取 data/、写入 outputs/
 │   ├── notebooks/
 │   │   └── problem1.ipynb           # Notebook 运行入口
 │   ├── data/                         # 输入 CSV
@@ -30,6 +29,8 @@
 ### 问题一
 
 分析山西新旧高考成绩分布变化，包括描述统计、高分段比例、Wasserstein 距离、KS 距离，以及基于截断偏态正态分布的反事实预测。
+
+问题一的 `src/problem1.py` 已直接适配整理后的目录结构，不依赖当前工作目录，也不再通过兼容层访问 CSV。
 
 ### 问题二
 
