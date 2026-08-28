@@ -1,0 +1,49 @@
+========源程序运行说明========
+本文件包含数学建模校赛问题一、问题二两组独立文件夹，两题代码完全独立运行。
+请保留原有文件夹结构。
+
+【文件清单】
+问题一文件夹：
+problem1.py：一键运行脚本
+problem1.ipynb：交互式Notebook代码
+文件夹内全部csv为本题所需输入数据；
+
+问题二文件夹：
+problem2.py：一键运行脚本
+problem2.ipynb：交互式Notebook代码
+文件夹内：/六对象典型分数转换表.csv/山西基准跨省换分表.csv/TOPSIS_input_matrix.csv/TOPSIS_result.csv为代码运行的输出数据；
+其余csv文件是代码所需的输入数据，程序运行自动生成输出结果。
+
+注：部分原始数据两个题目均需要使用，因此分别复制至两个文件夹内，因此无需跨目录读取文件
+
+【依赖库】
+本项目基于 Python3.13开发，所需第三方库：
+numpy、pandas、matplotlib、seaborn、scipy、scikit-learn
+
+一键安装命令：
+pip install numpy pandas matplotlib seaborn scipy scikit-learn
+
+【运行方式】
+方式1：运行Python脚本（推荐）
+终端进入「问题一」文件夹执行：
+python problem1.py
+
+终端进入「问题二」文件夹执行：
+python problem2.py
+
+方式2：交互式Notebook
+VSCode或者Jupyter打开对应ipynb文件，
+从上至下顺序执行全部单元格，禁止跳跃运行。
+
+【数据说明】
+山西相关统计采用官方一分一段公开数据；
+河北、浙江无官方分科人数，建模所用数据为行业合理估算值，仅用于模型仿真计算。
+
+【注意事项】
+1、csv数据文件必须与py脚本和ipynb处于同一个文件夹内，不要移动文件位置。
+2、__file__路径代码仅适用于py脚本，请勿在ipynb中执行该段代码。
+3、output_result下文件每次运行会被覆盖重写。
+4、如果出现绘图中文方框仅为本地字体缺失，属于显示问题，不影响数值计算。
+5、两组程序相互独立，请勿同时运行两份脚本。
+6、内置 os 库为Python自带，无需额外安装。
+7、输出文件夹内容会随每次运行自动更新覆盖。
